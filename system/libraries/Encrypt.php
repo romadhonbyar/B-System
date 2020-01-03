@@ -162,9 +162,23 @@ class CI_Encrypt {
 	 * @param	string	the key
 	 * @return	string
 	 */
-	public function encode($string, $key = '')
+	public function encode($string, $key = '', $url_safe=false) /* edit */
 	{
-		return base64_encode($this->mcrypt_encode($string, $this->get_key($key)));
+		/* edit start */
+		$ret = base64_encode($this->mcrypt_encode($string, $this->get_key($key)));
+        if ($url_safe)
+        {
+            $ret = strtr(
+                    $ret,
+                    array(
+                        '+' => 'yAAy',
+                        '=' => 'yBBy',
+                        '/' => 'yCCy'
+                    )
+                );
+        }
+        return $ret;
+		/* edit end */
 	}
 
 	// --------------------------------------------------------------------
@@ -178,8 +192,19 @@ class CI_Encrypt {
 	 * @param	string
 	 * @return	string
 	 */
-	public function decode($string, $key = '')
+	public function decode($string, $key = '') /* edit */
 	{
+		/* edit start */
+		$string = strtr(
+	        $string,
+	        array(
+	            'yAAy' => '+',
+	            'yBBy' => '=',
+	            'yCCy' => '/'
+	        )
+	    );
+		/* edit end */
+
 		if (preg_match('/[^a-zA-Z0-9\/\+=]/', $string) OR base64_encode(base64_decode($string)) !== $string)
 		{
 			return FALSE;

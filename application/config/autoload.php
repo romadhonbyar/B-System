@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------
@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | 6. Language files
 | 7. Models
 |
-*/
+ */
 
 /*
 | -------------------------------------------------------------------
@@ -38,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 |  $autoload['packages'] = array(APPPATH.'third_party', '/usr/local/shared');
 |
-*/
+ */
 $autoload['packages'] = array();
 
 /*
@@ -51,14 +51,26 @@ $autoload['packages'] = array();
 |
 | Prototype:
 |
-|	$autoload['libraries'] = array('database', 'email', 'session');
+|    $autoload['libraries'] = array('database', 'email', 'session');
 |
 | You can also supply an alternative library name to be assigned
 | in the controller:
 |
-|	$autoload['libraries'] = array('user_agent' => 'ua');
-*/
-$autoload['libraries'] = array();
+|    $autoload['libraries'] = array('user_agent' => 'ua');
+ */
+$autoload['libraries'] = array('database',
+    'template',
+    'session',
+    'ion_auth',
+    'ion_auth_acl',
+    'form_validation',
+    'encryption',
+    'encrypt',
+    'upload',
+    'email',
+    'user_agent',
+    'gravatar',
+);
 
 /*
 | -------------------------------------------------------------------
@@ -71,14 +83,14 @@ $autoload['libraries'] = array();
 |
 | Prototype:
 |
-|	$autoload['drivers'] = array('cache');
+|    $autoload['drivers'] = array('cache');
 |
 | You can also supply an alternative property name to be assigned in
 | the controller:
 |
-|	$autoload['drivers'] = array('cache' => 'cch');
+|    $autoload['drivers'] = array('cache' => 'cch');
 |
-*/
+ */
 $autoload['drivers'] = array();
 
 /*
@@ -87,9 +99,32 @@ $autoload['drivers'] = array();
 | -------------------------------------------------------------------
 | Prototype:
 |
-|	$autoload['helper'] = array('url', 'file');
-*/
-$autoload['helper'] = array();
+|    $autoload['helper'] = array('url', 'file');
+ */
+
+$autoload['helper'] = array('url',
+    'language',
+    'email',
+    'security',
+    'date',
+    'text',
+    'html',
+    'file',
+    'unix_to_human',
+    'human_to_unix',
+    'connect',
+    'gravatar',
+    'money',
+    'encode_id',
+    'who_is',
+    'where_is',
+    'datetime',
+    'uniqid',
+    'slug',
+    'render_page',
+    'active_link',
+    'generate'
+);
 
 /*
 | -------------------------------------------------------------------
@@ -97,12 +132,12 @@ $autoload['helper'] = array();
 | -------------------------------------------------------------------
 | Prototype:
 |
-|	$autoload['config'] = array('config1', 'config2');
+|    $autoload['config'] = array('config1', 'config2');
 |
 | NOTE: This item is intended for use ONLY if you have created custom
 | config files.  Otherwise, leave it blank.
 |
-*/
+ */
 $autoload['config'] = array();
 
 /*
@@ -111,13 +146,13 @@ $autoload['config'] = array();
 | -------------------------------------------------------------------
 | Prototype:
 |
-|	$autoload['language'] = array('lang1', 'lang2');
+|    $autoload['language'] = array('lang1', 'lang2');
 |
 | NOTE: Do not include the "_lang" part of your file.  For example
 | "codeigniter_lang.php" would be referenced as array('codeigniter');
 |
-*/
-$autoload['language'] = array();
+ */
+$autoload['language'] = array('auth', 'ion_auth', 'ion_auth_acl');
 
 /*
 | -------------------------------------------------------------------
@@ -125,11 +160,22 @@ $autoload['language'] = array();
 | -------------------------------------------------------------------
 | Prototype:
 |
-|	$autoload['model'] = array('first_model', 'second_model');
+|    $autoload['model'] = array('first_model', 'second_model');
 |
 | You can also supply an alternative model name to be assigned
 | in the controller:
 |
-|	$autoload['model'] = array('first_model' => 'first');
-*/
-$autoload['model'] = array();
+|    $autoload['model'] = array('first_model' => 'first');
+ */
+$autoload['model'] = array(
+    'su_auth/ion_auth_model',
+    'su_auth/ion_auth_acl_model',
+
+    'su_general/m_general',
+
+    'su_manage/m_manage_users',
+    'su_manage/m_manage_permissions',
+    'su_manage/m_manage_groups',
+
+    'api/m_api',
+);

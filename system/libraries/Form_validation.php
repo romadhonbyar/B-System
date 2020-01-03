@@ -1300,6 +1300,20 @@ class CI_Form_validation {
 	// --------------------------------------------------------------------
 
 	/**
+	 * Alpha-spaces
+	 * editor : Ahmad Romadhon (@RomadhonByar)
+	 * @param	string
+	 * @return	bool
+	 * @desc 
+	 */
+	public function alpha_spaces($str)
+	{
+		return ( ! preg_match("/^([-a-z_ ])+$/i", $str)) ? FALSE : TRUE;
+	}
+
+	// --------------------------------------------------------------------
+
+	/**
 	 * Alpha-numeric
 	 *
 	 * @param	string
