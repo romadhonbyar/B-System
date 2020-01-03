@@ -123,7 +123,6 @@ $autoload['helper'] = array('url',
     'slug',
     'render_page',
     'active_link',
-    'generate'
 );
 
 /*
@@ -176,6 +175,4 @@ $autoload['model'] = array(
     'su_manage/m_manage_users',
     'su_manage/m_manage_permissions',
     'su_manage/m_manage_groups',
-
-    'api/m_api',
 );
