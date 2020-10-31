@@ -6,5 +6,4 @@ Base system login
 - Codeigniter 3.0
 - PHP 5.6
 - HMVC (https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc/src/codeigniter-3.x/)
-- Stisla (https://getstisla.com/#!)
--
+- Stisla (https://getstisla.com/#!)-
