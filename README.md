@@ -8,3 +8,10 @@ Base system login
 - HMVC (https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc/src/codeigniter-3.x/)
 - PHPdotENV (https://github.com/vlucas/phpdotenv)
 - Stisla (https://getstisla.com/#!)-
+
+# Instalasi
+
+via Composer:
+```
+composer install
+```
