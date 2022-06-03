@@ -8,7 +8,7 @@
  * @license http://opensource.org/licenses/MIT MIT License
  * @link https://codeigniter.com
  */
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 $lang['form_validation_required'] = 'Bidang {field} dibutuhkan.';
 $lang['form_validation_isset'] = 'Bidang {field} harus memiliki nilai.';
 $lang['form_validation_valid_email'] = 'Bidang {field} harus berisi alamat email yang sah.';
@@ -39,3 +39,6 @@ $lang['form_validation_greater_than'] = 'Bidang {field} harus berisi angka lebih
 $lang['form_validation_greater_than_equal_to'] = 'Bidang {field} harus berisi angka yang lebih besar dari atau sama dengan {param}.';
 $lang['form_validation_error_message_not_set'] = 'Tidak dapat mengakses pesan kesalahan sesuai dengan nama bidang Anda {field}.';
 $lang['form_validation_in_list'] = 'Bidang {field} harus menjadi salah satu dari: {param}.';
+
+$lang['form_validation_edit_unique']= 'Bidang {field} harus berisi nilai unik.';  /* Edit Validasi saat edit data*/
+$lang['form_validation_alpha_spaces']	= 'Bidang {field} hanya boleh berisi alfabet dan spasi.'; /* Edit Validasi Nama orang*/

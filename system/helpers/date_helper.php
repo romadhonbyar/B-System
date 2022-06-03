@@ -684,7 +684,7 @@ if ( ! function_exists('date_range'))
 	 * @param	string  date_format	Output date format, same as in date()
 	 * @return	array
 	 */
-	function date_range($unix_start = '', $mixed = '', $is_unix = TRUE, $format = 'Y-m-d')
+	function date_range($unix_start = '', $mixed = '', $is_unix = TRUE, $format = "Y-m-d")
 	{
 		if ($unix_start == '' OR $mixed == '' OR $format == '')
 		{

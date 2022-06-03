@@ -6,7 +6,7 @@
  *
  * This content is released under the MIT License (MIT)
  *
- * Copyright (c) 2014 - 2017, British Columbia Institute of Technology
+ * Copyright (c) 2014 - 2019, British Columbia Institute of Technology
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,8 +29,8 @@
  * @package	CodeIgniter
  * @author	EllisLab Dev Team
  * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (https://ellislab.com/)
- * @copyright	Copyright (c) 2014 - 2017, British Columbia Institute of Technology (http://bcit.ca/)
- * @license	http://opensource.org/licenses/MIT	MIT License
+ * @copyright	Copyright (c) 2014 - 2019, British Columbia Institute of Technology (https://bcit.ca/)
+ * @license	https://opensource.org/licenses/MIT	MIT License
  * @link	https://codeigniter.com
  * @since	Version 1.0.0
  * @filesource
@@ -43,11 +43,11 @@ $lang['form_validation_valid_email']		= 'The {field} field must contain a valid 
 $lang['form_validation_valid_emails']		= 'The {field} field must contain all valid email addresses.';
 $lang['form_validation_valid_url']		= 'The {field} field must contain a valid URL.';
 $lang['form_validation_valid_ip']		= 'The {field} field must contain a valid IP.';
+$lang['form_validation_valid_base64']		= 'The {field} field must contain a valid Base64 string.';
 $lang['form_validation_min_length']		= 'The {field} field must be at least {param} characters in length.';
 $lang['form_validation_max_length']		= 'The {field} field cannot exceed {param} characters in length.';
 $lang['form_validation_exact_length']		= 'The {field} field must be exactly {param} characters in length.';
 $lang['form_validation_alpha']			= 'The {field} field may only contain alphabetical characters.';
-$lang['form_validation_alpha_spaces']	= 'The {field} field may only contain alphabetical and spaces.'; /* Edit Validasi Nama orang*/
 $lang['form_validation_alpha_numeric']		= 'The {field} field may only contain alpha-numeric characters.';
 $lang['form_validation_alpha_numeric_spaces']	= 'The {field} field may only contain alpha-numeric characters and spaces.';
 $lang['form_validation_alpha_dash']		= 'The {field} field may only contain alpha-numeric characters, underscores, and dashes.';
@@ -67,3 +67,6 @@ $lang['form_validation_greater_than']		= 'The {field} field must contain a numbe
 $lang['form_validation_greater_than_equal_to']	= 'The {field} field must contain a number greater than or equal to {param}.';
 $lang['form_validation_error_message_not_set']	= 'Unable to access an error message corresponding to your field name {field}.';
 $lang['form_validation_in_list']		= 'The {field} field must be one of: {param}.';
+
+$lang['form_validation_edit_unique']= 'The {field} field must contain a unique value.';
+$lang['form_validation_alpha_spaces']	= 'The {field} field may only contain alphabetical and spaces.'; /* Edit Validasi Nama orang*/
