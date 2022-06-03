@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -11,22 +11,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |	http://codeigniter.com/user_guide/general/hooks.html
 |
 */
-$hook['post_controller_constructor'] = array(
+$hook['post_controller_constructor'] = [
     'class' => 'LanguageLoader',
     'function' => 'initialize',
     'filename' => 'LanguageLoader.php',
-    'filepath' => 'hooks'
-);
+    'filepath' => 'hooks',
+];
 
-$hook['display_override'][] = array(
-	'class' => '',
-	'function' => 'compress',
-	'filename' => 'compress.php',
-	'filepath' => 'hooks'
-);
+/*$hook['display_override'][] = [
+    'class' => '',
+    'function' => 'compress',
+    'filename' => 'compress.php',
+    'filepath' => 'hooks',
+];*/
 
-$hook['post_controller_constructor'][] = array(
-                                            'function' => 'redirect_ssl',
-                                            'filename' => 'ssl.php',
-                                            'filepath' => 'hooks'
-                                          );
+$hook['post_controller_constructor'][] = [
+    'function' => 'redirect_ssl',
+    'filename' => 'ssl.php',
+    'filepath' => 'hooks',
+];
+
+// Use this code if your .env files on *CodeIgniter ROOT* folder
+$hook['pre_system'] = function () {
+    $dotenv = Dotenv\Dotenv::create(FCPATH);
+    $dotenv->load();
+};

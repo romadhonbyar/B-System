@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="<?php echo base_url('assets/backend/base/plugins/bootstrap-validator/bootstrap-validator.min.css'); ?>">

@@ -66,7 +66,7 @@ class Ion_auth
 
 		$this->load->library('session');
 
-		$this->load->model('su_auth/ion_auth_model');
+		$this->load->model('main_auth/ion_auth_model');
 
 		$this->_cache_user_in_group =& $this->ion_auth_model->_cache_user_in_group;
 
@@ -144,7 +144,7 @@ class Ion_auth
 			{
 				$data = array(
 					'identity'		=> $user->{$this->config->item('identity', 'ion_auth')},
-					'forgotten_password_code' => $user->forgotten_password_code
+					'forgotten_password_code' => str_replace("/","bBb", $user->forgotten_password_code)
 				);
 
 				if(!$this->config->item('use_ci_email', 'ion_auth'))

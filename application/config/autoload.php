@@ -39,7 +39,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |  $autoload['packages'] = array(APPPATH.'third_party', '/usr/local/shared');
 |
  */
-$autoload['packages'] = array();
+$autoload['packages'] = [];
 
 /*
 | -------------------------------------------------------------------
@@ -58,19 +58,19 @@ $autoload['packages'] = array();
 |
 |    $autoload['libraries'] = array('user_agent' => 'ua');
  */
-$autoload['libraries'] = array('database',
+$autoload['libraries'] = [
+    'database',
     'template',
     'session',
     'ion_auth',
     'ion_auth_acl',
     'form_validation',
-    'encryption',
-    'encrypt',
-    'upload',
     'email',
     'user_agent',
+    'upload',
+    'encryption',
     'gravatar',
-);
+];
 
 /*
 | -------------------------------------------------------------------
@@ -91,7 +91,7 @@ $autoload['libraries'] = array('database',
 |    $autoload['drivers'] = array('cache' => 'cch');
 |
  */
-$autoload['drivers'] = array();
+$autoload['drivers'] = [];
 
 /*
 | -------------------------------------------------------------------
@@ -102,28 +102,16 @@ $autoload['drivers'] = array();
 |    $autoload['helper'] = array('url', 'file');
  */
 
-$autoload['helper'] = array('url',
+$autoload['helper'] = [
     'language',
     'email',
-    'security',
     'date',
     'text',
     'html',
     'file',
-    'unix_to_human',
-    'human_to_unix',
-    'connect',
-    'gravatar',
-    'money',
-    'encode_id',
-    'who_is',
-    'where_is',
-    'datetime',
-    'uniqid',
-    'slug',
-    'render_page',
-    'active_link',
-);
+    'form',
+    'url',
+];
 
 /*
 | -------------------------------------------------------------------
@@ -137,7 +125,7 @@ $autoload['helper'] = array('url',
 | config files.  Otherwise, leave it blank.
 |
  */
-$autoload['config'] = array();
+$autoload['config'] = [];
 
 /*
 | -------------------------------------------------------------------
@@ -151,7 +139,7 @@ $autoload['config'] = array();
 | "codeigniter_lang.php" would be referenced as array('codeigniter');
 |
  */
-$autoload['language'] = array('auth', 'ion_auth', 'ion_auth_acl');
+$autoload['language'] = ['auth', 'ion_auth', 'ion_auth_acl'];
 
 /*
 | -------------------------------------------------------------------
@@ -166,13 +154,4 @@ $autoload['language'] = array('auth', 'ion_auth', 'ion_auth_acl');
 |
 |    $autoload['model'] = array('first_model' => 'first');
  */
-$autoload['model'] = array(
-    'su_auth/ion_auth_model',
-    'su_auth/ion_auth_acl_model',
-
-    'su_general/m_general',
-
-    'su_manage/m_manage_users',
-    'su_manage/m_manage_permissions',
-    'su_manage/m_manage_groups',
-);
+$autoload['model'] = [];

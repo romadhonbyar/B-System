@@ -31,7 +31,7 @@ class Ion_auth_acl
 
 		$this->load->library('session');
 
-        $this->load->model('su_auth/ion_auth_acl_model');
+        $this->load->model('main_auth/ion_auth_acl_model');
 
         if (count($config) > 0)
             foreach ($config as $key => $val)
