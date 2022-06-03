@@ -5,45 +5,30 @@
  *
  */
 
-"use strict";
+'use strict'
 
-$("[data-checkboxes]").each(function () {
-    var me = $(this),
-        group = me.data('checkboxes'),
-        role = me.data('checkbox-role');
+/* $(document).ready(function () {
+    window.setTimeout(function () {
+        $('.alert')
+            .fadeTo(1000, 0)
+            .slideUp(1000, function () {
+                $(this).remove()
+            })
+    }, 5000)
+})*/
 
-    me.change(function () {
-        var all = $('[data-checkboxes="' + group + '"]:not([data-checkbox-role="dad"])'),
-            checked = $('[data-checkboxes="' + group + '"]:not([data-checkbox-role="dad"]):checked'),
-            dad = $('[data-checkboxes="' + group + '"][data-checkbox-role="dad"]'),
-            total = all.length,
-            checked_length = checked.length;
+/** Show Filename file upload */
+/*$('.custom-file-input').on('change', function () {
+    let fileName = $(this).val().split('\\').pop();
+    let label = $(this).siblings('.custom-file-label');
 
-        if (role == 'dad') {
-            if (me.is(':checked')) {
-                all.prop('checked', true);
-            } else {
-                all.prop('checked', false);
-            }
-        } else {
-            if (checked_length >= total) {
-                dad.prop('checked', true);
-            } else {
-                dad.prop('checked', false);
-            }
-        }
-    });
-});
+    if (label.data('default-title') === undefined) {
+        label.data('default-title', label.html());
+    }
 
-$("#table-1").dataTable({
-    "columnDefs": [{
-        "sortable": false,
-        "targets": [2, 3]
-    }]
-});
-$("#table-2").dataTable({
-    "columnDefs": [{
-        "sortable": false,
-        "targets": [0, 2, 3]
-    }]
-});
+    if (fileName === '') {
+        label.removeClass("selected").html(label.data('default-title'));
+    } else {
+        label.addClass("selected").html(fileName);
+    }
+});*/

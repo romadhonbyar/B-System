@@ -1,0 +1,57 @@
+{
+  "_from": "disableautofill",
+  "_id": "disableautofill@1.2.8",
+  "_inBundle": false,
+  "_integrity": "sha512-z+LfLFSyxZwp+kgge1uHQ4n0cXb5Z5dCPUjfe74T3qFGwb/v/ZAGy+uYjgiDlfzGX+lfZtyt/0DnOIDXM+fFmA==",
+  "_location": "/disableautofill",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "disableautofill",
+    "name": "disableautofill",
+    "escapedName": "disableautofill",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/disableautofill/-/disableautofill-1.2.8.tgz",
+  "_shasum": "12a0a6d39f4d1829a073d3942853b02f840e11cb",
+  "_spec": "disableautofill",
+  "_where": "Z:\\P_Web\\Ampps\\www\\tema\\tema-stisla\\stisla-master",
+  "author": {
+    "name": "Terry Lin",
+    "email": "contact@terryl.in",
+    "url": "https://terryl.in"
+  },
+  "bugs": {
+    "url": "https://github.com/terrylinooo/jquery.disableAutoFill/issues"
+  },
+  "bundleDependencies": [],
+  "deprecated": false,
+  "description": "The easiest solution for disabling Google Chrome auto-fill, auto-complete functions.",
+  "directories": {
+    "doc": "docs"
+  },
+  "homepage": "https://terrylinooo.github.io/jquery.disableAutoFill/",
+  "keywords": [
+    "jquery",
+    "chrome",
+    "autofill"
+  ],
+  "license": "MIT",
+  "main": "src/jquery.disableAutoFill.js",
+  "name": "disableautofill",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrylinooo/jquery.disableAutoFill.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.2.8"
+}

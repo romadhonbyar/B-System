@@ -296,7 +296,7 @@ select.form-control:not([size]):not([multiple]) {
   display: block;
   text-align: center;
   padding: 0 1rem;
-  height: 35px;
+  height: 42px; /* 35px;*/ /* EDIT */
   position: relative;
   cursor: pointer;
   border-radius: 3px;
@@ -306,7 +306,7 @@ select.form-control:not([size]):not([multiple]) {
   user-select: none;
   font-size: 13px;
   min-width: 2.375rem;
-  line-height: 36px; }
+  line-height: 43px; /* 36px;*/ /* EDIT */; }
 
 .selectgroup-button-icon {
   padding-left: .5rem;
@@ -687,6 +687,14 @@ select.form-control:not([size]):not([multiple]) {
         .card .card-header h4 + .card-header-action .input-group .input-group-btn + .form-control,
         .card .card-header h4 + .card-header-form .input-group .input-group-btn + .form-control {
           border-radius: 0 30px 30px 0 !important; }
+
+
+          
+          /* TWO BUTTON FORM INPUT */
+          .card .card-header h4 + .card-header-action .input-group .input-group-btn + .form-control,
+          .card .card-header h4 + .card-header-form .input-group .input-group-btn + .form-control {
+            border-radius: 0 0px 0px 0 !important; } /* bagian ini */
+
         .card .card-header h4 + .card-header-action .input-group .input-group-btn .btn,
         .card .card-header h4 + .card-header-form .input-group .input-group-btn .btn {
           margin-top: -1px;
