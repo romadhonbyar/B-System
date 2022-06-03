@@ -11,6 +11,9 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ index.php?/$1 [L]
 
+    #RewriteCond %{HTTPS} off
+    #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
     php_value max_input_vars 1000000000000000000000000
 
 </IfModule>
@@ -18,3 +21,7 @@
 <IfModule !mod_rewrite.c>
     ErrorDocument 404 /index.php
 </IfModule>
+
+#<FilesMatch "\.(php4|php5|php3|php2|php|phtml)$">
+# SetHandler application/x-httpd-alt-php73___lsphp
+#</FilesMatch>
