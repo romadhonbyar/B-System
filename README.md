@@ -7,7 +7,7 @@ Base system login
 - Ion Auth ACL (https://github.com/weblogics/Codeigniter-Ion-Auth-ACL)
 - HMVC (https://bitbucket.org/wiredesignz/codeigniter-modular-extensions-hmvc/src/codeigniter-3.x/)
 - PHPdotENV (https://github.com/vlucas/phpdotenv)
-- Stisla (https://getstisla.com/#!)-
+- Stisla (https://getstisla.com/#!)
 
 # Instalasi
 
